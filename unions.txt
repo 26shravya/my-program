@@ -1,0 +1,63 @@
+#include<stdio.h>
+#include<string.h>
+union var{
+   int a;
+
+    int b;
+    char name[5];
+};
+int main()
+{
+    union var num;
+    printf("size of the union = %d\n",sizeof(num));
+    return 0;
+}
+
+
+#include<stdio.h>
+#include<string.h>
+struct  var{
+   int a;
+
+    int b;
+    char name[5];
+};
+int main()
+{
+    struct var num;
+    printf("size of the structure = %d\n",sizeof(num));
+    return 0;
+}
+
+
+#include<stdio.h>
+#include<string.h>
+union student{
+   float id;
+   char name[10];
+   int age;
+};
+int main()
+{
+    union student s1;
+    s1.id=1001;
+    strcpy(s1.name,"shravya");
+    s1.age=24;
+    printf("student id=%f\n",s1.id);
+    printf("student name=%s\n",s1.name);
+    printf("student age=%d",s1.age);
+    return 0;
+}
+#include<stdio.h>
+struct status{
+ int flag1:1;
+ int flag2:1;
+};
+int main()
+{
+    struct status s1;
+    printf("size of the structure is=%d",sizeof(s1));
+    return 0;
+}
+
+

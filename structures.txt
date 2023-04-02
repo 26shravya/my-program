@@ -1,0 +1,269 @@
+#include<stdio.h>
+struct student{
+int id;
+char name[10];
+int age;
+};
+int main()
+{
+    struct student s1={1001,"Nandu",27};
+
+    printf("%d",s1.id);
+    printf("%s",s1.name);
+    printf("%d",s1.age);
+    return 0;
+
+}
+
+
+#include<stdio.h>
+struct employee{
+int id;
+char name[10];
+int age;
+int salary;
+};
+int main()
+{
+    struct employee e={1001,"Nandan",27,70000};
+
+    printf("%d\n",e.id);
+    printf("%s\n",e.name);
+    printf("%d\n",e.age);
+    printf("%d",e.salary);
+    return 0;
+
+}
+
+#include<stdio.h>
+struct student
+{
+    int rno;
+    char name[2];
+    int marks[3];
+    int total;
+    float avg;
+}stud[2];
+int main()
+{
+    int i,j;
+    struct student s;
+    for(i=0;i<2;i++)
+    {
+        printf("enter the roll number:");,
+        scanf("%d",&stud[i].rno);
+        printf("enter the names:");
+        scanf("%s",stud[i].name);
+        stud[i].total=0;
+        for(j=0;j<3;j++)
+        {
+            printf("enter marks subjects %d:",j+1);
+            scanf("%d",&stud[i].marks[j]);
+                stud[i].total=stud[i].total+stud[i].marks[j];
+                stud[i].avg=stud[i].total/3;
+        }
+        printf("\n-----------------\n");
+    }
+    for(i=0;i<2;i++)
+    {
+        for(j=i+1;j<2;j++)
+        {
+            if(stud[i].total<stud[j].total)
+            {
+                s=stud[i];
+                stud[i]=stud[j];
+                stud[j]=s;
+            }
+        }
+    }
+    printf("record in descending order\n");
+    printf("\n------------------------------\n");
+    printf("\n roll number name and total marks avg\n");
+    for(i=0;i<2;i++)
+    {
+        printf("\n%d\t%s\t%d\t%.2f",stud[i].rno,stud[i].name,stud[i].total,stud[i].avg);
+    }
+
+    return 0;
+    }
+
+
+
+#include<stdio.h>
+#include<conio.h>
+struct student{
+    int id;
+    char name[20];
+    struct Date
+    {
+        int D;
+        int M;
+        int Y;
+    }bd,pd;
+};
+int main()
+{
+    int r;
+    struct student s;
+    printf("enter student details");
+    printf("\n--------------------\n");
+    printf("enter student id:");
+    scanf("%d",&s.id);
+    printf("enter student name:");
+    scanf("%s",s.name);
+    printf("enter birth-date:");
+    scanf("%d-%d-%d",&s.bd.D,&s.bd.M,&s.bd.Y);
+    printf("enter present date:");
+    scanf("%d-%d-%d",&s.pd.D,&s.pd.M,&s.pd.Y);
+    r=s.pd.Y-s.bd.Y;
+    printf("\n--------------------\n");
+    printf("age of the student is\n");
+   // printf("\n-------------------\n");
+    printf("\t%d years",r);
+    return 0;
+
+}
+
+#include<stdio.h>
+struct student{
+    int roll_no;
+    char name[20];
+    int age;
+};
+int main()
+{
+    struct student stu[5];
+    char s1;
+    int i;
+    for(i=0;i<5;i++)
+    {
+        printf("enter student roll number:\n");
+        scanf("%d",stu[i].roll_no);
+        printf("enter student name:\n");
+        scanf("%s",stu[i].name);
+        printf("enter student age:");
+        scanf("%d",stu[i].age);
+    }
+    printf("enter name for student:");
+    scanf("%s",s1.name);
+    int array[20]=s1.name
+    for(i=0;i<5;i++)
+    {
+        if(stu[i]==array[i]);
+        {
+            printf("student name=%s",stu[i].name);
+            printf("roll number=%d",stu[i].roll_no);
+        }
+    }
+    return 0;
+}
+
+
+
+
+#include<stdio.h>
+struct student{
+    int roll_no;
+    char name[20];
+    int age;
+};
+int main()
+{
+    struct student stu[5],s1;
+    int i;
+    for(i=0;i<5;i++)
+    {
+        printf("enter student roll number:\n");
+        scanf("%d",&stu[i].roll_no);
+        printf("enter student name:\n");
+        scanf("%s",stu[i].name);
+        printf("enter student age:");
+        scanf("%d",&stu[i].age);
+    }
+    printf("enter name for student:");
+    scanf("%s",s1.name);
+    char array[20];
+    array[20]=s1.name;
+    for(i=0;i<5;i++)
+    {
+        strcmp(stu[i],array[i]==0);
+        {
+            printf("student name=%s",stu[i].name);
+            printf("roll number=%d",stu[i].roll_no);
+        }
+    }
+    return 0;
+}
+
+
+#include<stdio.h>
+struct student
+{
+    int id;
+    char name[20];
+    int marks;
+}s[5];
+int main()
+{
+    for(int i=0;i<3;i++)
+    {
+        printf("enter student id:\n");
+        scanf("%d",&s[i].id);
+        printf("enter student name:\n");
+        scanf("%s",s[i].name);
+        printf("enter student marks:\n");
+        scanf("%d",&s[i].marks);
+    }
+    for(int i=0;i<3;i++)
+    {
+        if(s[i].marks<50)
+        {
+            printf("\n-------------------\n");
+            printf("id and name of the students who got marks less than 50\n ");
+            printf("%d\n",s[i].id);
+            printf("%s\n",s[i].name);
+        }
+    }
+    return 0;
+}
+
+
+#include<stdio.h>
+struct student
+{
+    int id;
+    char name[20];
+    int marks;
+}s[3];
+int main()
+{
+    int hig_marks;
+    for(int i=0;i<3;i++)
+    {
+        printf("enter student id:\n");
+        scanf("%d",&s[i].id);
+        printf("enter student name:\n");
+        scanf("%s",s[i].name);
+        printf("enter student marks:\n");
+        scanf("%d",&s[i].marks);
+    }
+    hig_marks=s[0].marks;
+    for(int i=1;i<=3;i++)
+    {
+        if(s[i].marks>hig_marks)
+        {
+            hig_marks=s[i].marks;
+            printf("details of student who having highest marks:\n" );
+            printf("student id=%d\n",s[i].id);
+            printf("student name%s\n",s[i].name);
+            printf("student marks=%d",s[i].marks);
+        }
+    }
+    return 0;
+}
+
+
+
+
+
+

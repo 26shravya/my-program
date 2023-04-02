@@ -1,0 +1,440 @@
+#include<stdio.h>
+int main()
+{
+    printf("amazing facts:");
+    return 0;
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+    printf("inverting amplifier\n");
+    printf("non inverting amplifier\n");
+    printf("voltage follower\n");
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("enter two number:");
+    scanf("%d%d\n",&a,&b);
+    return 0;
+}
+
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char X,M,L;
+    printf("L");
+    printf("M");
+    printf("X");
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    printf("###\n");
+    printf("#\n");
+    printf("###\n");
+    printf("#\n");
+    printf("#\n");
+    printf("####\n");
+    printf("#\n");
+    printf("#\n");
+    printf("#\n");
+    printf("####\n");
+    return 0;
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+    int num1,num2;
+    int temp=0;
+    printf("enter two numbers\n");
+    scanf("%d %d",&num1,&num2);
+    temp=num1;
+    num1=num2;
+    num2=temp;
+    printf("after swapping num1=%d num2=%d is:",num1,num2);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    int sum,sub,div,mod,mul;
+    printf("enter two numbers\n");
+    scanf("%d %d",&a,&b);
+    sum=(a+b);
+    printf("value of sum=%d\n",sum);
+    sub=(a-b);
+    printf("value of sub=%d \n",sub);
+    div=(a/b);
+    printf("value of div =%d\n",div);
+    mod=(a%b);
+    printf("value of mod= %d\n",mod);
+    mul=(a*b);
+    printf("value of mul=%d\n",mul);
+    return 0;
+}
+
+
+#include<stdio.h>
+#define A 2.34
+int main()
+{
+    #ifdef A
+    printf("hi");
+    #endif
+    #ifndef A
+    printf("bye");
+    #endif
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+
+{
+    printf("This is my first program");
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+
+{
+    int num1;
+    printf("enter num1 number\n");
+    scanf("%d",&num1);
+    if(num1%2==0)
+        printf("number is even");
+    else
+        printf("number is odd");
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+
+{
+    int num1,num2;
+    int sum;
+    printf("enter two numbers:\n");
+    scanf("%d%d",&num1,&num2);
+    sum=(num1+num2);
+        printf("sum of two number is=%d",sum);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+
+{
+    int num1,num2;
+    int pro;
+    printf("enter two numbers:\n");
+    scanf("%d%d",&num1,&num2);
+    pro=(num1*num2);
+        printf("product of two number is=%d",pro);
+    return 0;
+}
+
+
+#include<stdio.h>
+#define PI 3.14f
+int main()
+{
+    float radius,area,perimeter ;
+    printf("enter  radius of circle\n ");
+    scanf("%f",&radius);
+    perimeter=2*PI*radius;
+    printf("perimeter of the circle :%f\n",perimeter);
+    area=PI*radius*radius;
+    printf("area of the circle :%f\n",area);
+    return 0;
+}
+
+
+
+#include<stdio.h>
+
+int main()
+{
+    int marks,rollno;
+    char name;
+    int phy,math,che,soc,cs;
+    int total=100;
+    int scored;
+    float  per;
+    printf("enter name   of student:");
+    scanf("%s",name);
+    printf("enter the roll number of the student:");
+    scanf("%d",&rollno);
+    printf("scores  of physics,mathematics,chemistry,social,computer science");
+    scanf("%d%d%d%d%d\n",&phy,&math,&che,&soc,&cs);
+    scored=phy+math+che+soc+cs;
+    per=scored/total*100;
+    printf("percentage =%f",per);
+    return 0;
+}
+
+
+
+#include<stdio.h>
+#define PI 3.14f
+int main()
+{
+    printf("PI");
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+
+    int num=10;
+    printf("%d",num);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+
+    int y=25;
+    int x;
+    x=sqrt(y);
+    printf("square of num is =%d",x);
+    return 0;
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+    int num=10;
+    float x=99.99;
+    char ch='c';
+    long int num1=234;
+    unsigned long int num2=245;
+    printf("%d\n",num);
+    printf("%f\n",x);
+    printf("%c\n",ch);
+    printf("%ld\n",num1);
+    printf("%u\n",num2);
+    return 0;
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+    int num=10;
+    float x=99.99;
+    char ch='c';
+    long int num1=7000000;
+    unsigned long int num2=8000000;
+    printf("%d\n",num);
+    printf("%f\n",x);
+    printf("%c\n",ch);
+    printf("%lu\n",num1);
+    printf("%u\n",num2);
+    return 0;
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+    int  unsigned  num=32768;
+    printf("%hi",  num);
+    return 0;
+
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+    int  num=10;
+    printf("%d",sizeof num);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    unsigned int  num=-65535;
+    printf("%hu",num);
+    return 0;
+}
+
+
+#include<stdio.h>
+#define PI 3.14
+int main()
+{
+    printf("%f",PI);
+
+}
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int num;
+    printf("%d",sizeof num);
+     float x;
+     printf("%f",sizeof x);
+    char ch;
+    printf("%c",sizeof ch);
+    long int num1;
+    printf("%ld",sizeof num1);
+    unsigned long int num2;
+    printf("%hu",sizeof num2);
+    return 0;
+}
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int num;
+     float x;
+     char ch;
+      long int num1;
+      unsigned long int num2;
+    printf("size of the num is=%d\n",sizeof (num));
+     printf("size of the x is=%d\n",sizeof (x));
+    printf("size of ch is =%d\n",sizeof (ch));
+    printf("size of  num1 is =%d\n",sizeof (num1));
+    printf("size of  num2 is=%d\n",sizeof (num2));
+    return 0;
+}
+
+
+#include<stdio.h>
+#define a true
+#define b false
+int main()
+{
+    _Bool a;
+    _Bool b;
+    _Bool c;
+    _Bool d;
+    a=true;
+    b=false;
+    c=0;
+    d=1;
+     printf("%d\n",a);
+     printf("%d\n",b);
+     printf("%d\n",c);
+     printf("%d\n",d);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    long int num=65535;
+    printf("%ld",num);
+    return 0;
+}
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int long x,y;
+    x=abs(-65535);
+    printf("absolute value of x is=%ld\n",x);
+    y=abs(65535);
+    printf("absolute value of y is =%ld\n",y);
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+
+    int id;
+    int salary;
+    int total;
+    float x;
+    printf("enter id of the employee\n");
+    scanf("%d",&id);
+    printf("enter the employee salary");
+    scanf("%d",&salary);
+    printf("enter the total worked hr of a month\n");
+    scanf("%d",&total);
+    printf("id of the employee is =%d\n",id);
+    x=salary * total;
+    printf("value of x is =%0.2f",x);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    float num;
+    printf("enter a number\n");
+    scanf("%f",&num);
+    printf("value of num is=%0.1f\n",num);
+    printf("value of num is=%0.2f\n",num);
+    printf("value of num is=%0.3f\n",num);
+    printf("value of num is=%0.4f\n",num);
+    printf("value of num is=%0.5f\n",num);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    const int num=10;
+    printf("value of num is=%d",num);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    const int num=10;
+    num=20;
+    printf("value of num is=%d",num);
+    return 0;
+}
+

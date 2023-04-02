@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int a=5;
+    char b='a';
+    float c;
+    c=a+b;
+    printf("value of c=%.2f",c);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    float a=10.8,b;
+    b=((int)a);
+    printf("value of b=%f\n",b);
+    printf("value of b=%d",(int)a);
+    return 0;
+}
+

@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    char b;
+    float c;
+    printf("%d %c %.2f",a,b,c);
+    return 0;
+}
+
+
+#include<stdio.h>
+
+   static int a;
+    static char b;
+    static float c;
+int main()
+{
+    printf("%d %c %.1f",a,b,c);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    register int a;
+    printf("a=%d",a);
+    return 0;
+}
+
+
+

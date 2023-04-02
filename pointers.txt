@@ -1,0 +1,307 @@
+#include<stdio.h>
+int main()
+{
+    int a=5;
+    int *ptr;
+    ptr=&a;
+   int b=*ptr;
+   printf("value of b=%d",b);
+   return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int a=5,b=6,c;
+    int *ptr1;
+    int *ptr2;
+    ptr1=&a;
+    ptr2=&b;
+    c= *ptr1 +  *ptr2;
+   printf("value of c=%d",c);
+   return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int a=6,b=5,c;
+    int *ptr1;
+    int *ptr2;
+    ptr1=&a;
+    ptr2=&b;
+    c= *ptr1 -  *ptr2;
+   printf("value of c=%d",c);
+   return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int a=6,b=7;
+    int *ptr1;
+    int *ptr2;
+    ptr1=&a;
+    ptr2=&b;
+    if(*ptr2<*ptr1)
+    {
+
+         printf("maximum is =%d",*ptr1);
+    }
+
+
+    else
+        {
+        printf("maximum is =%d",*ptr2);
+   }
+   return 0;
+}
+
+
+
+
+#include<stdio.h>
+int main()
+{
+   char str[10];
+   int c=0;
+   printf("enter string:");
+   scanf("%s",str);
+   char *ptr;
+   ptr=&str;
+   while(*ptr!='\0')
+   {
+
+       c++;
+       *ptr++;
+   }
+   printf("length of the string is=%d",c );
+   return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+   int array[10];
+   int i,n;
+   int *ptr;
+   printf("enter size:");
+   scanf("%d",&n);
+   printf("enter array elements:");
+   for(i=0;i<n;i++)
+   {
+       scanf("%d",&array[i]);
+   }
+   for(i=0;i<n;i++){
+   ptr=&array[i];
+   printf("%d  ",*ptr);
+   }
+   return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+   int n,fact=1,i;
+   int *ptr;
+   printf("enter number of elements:");
+   scanf("%d",&n);
+   for(i=1;i<=n;i++)
+   {
+       ptr=&fact;
+       *ptr=*ptr*i;
+   }
+   printf("factorial is = %d",*ptr);
+   return 0;
+}
+
+
+  #include<stdio.h>
+int main()
+{
+   int array[100],n,i;
+   int *ptr;
+   int sum=0;
+   printf("enter number of elements:");
+   scanf("%d",&n);
+   printf("enter array elements:");
+   for(i=0;i<n;i++)
+   {
+     scanf("%d",&array[i]);
+   }
+     for(i=0;i<n;i++){
+            ptr=&sum;
+        *ptr=*ptr+array[i];
+     }
+   printf("sum = %d",*ptr);
+   return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+   int array[100],n,i;
+   float *ptr;
+   int sum=0;
+   float avg=0;
+   printf("enter number of elements:");
+   scanf("%d",&n);
+   printf("enter array elements:");
+   for(i=0;i<n;i++)
+   {
+     scanf("%d",&array[i]);
+   }
+     for(i=0;i<n;i++){
+            ptr=&sum;
+        *ptr=*ptr+array[i];
+     }
+     avg=*ptr/n;
+   printf("sum = %.1f\n",*ptr);
+   printf("average =%.1f",avg);
+   return 0;
+}
+
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[20],rev_str[20],i;
+    int n;
+    int *ptr;
+    printf("enter a string:");
+    scanf("%s",str);
+    ptr=&str;
+    n=strlen(str);
+    for(i=0;i<n;i++)
+    {
+        rev_str=ptr[n-1-i];
+    }
+    printf("reversed string is=%s\n",rev_str);
+    if(!(strcmp(str,rev_str)))
+    {
+        printf("palindrome :\n");
+    }
+    else
+        {
+        printf("not palindrome\n a :");
+    }
+    return 0;
+}
+
+
+
+#include<stdio.h>
+
+int sum(int *num1,int *num2)
+{
+    int add=*num1+*num2;
+    printf("add=%d",add);
+    return 0;
+}
+int main()
+{
+    int a=4,b=5;
+    sum(&a,&b);
+    return 0;
+}
+
+
+
+#include<stdio.h>
+
+int sum(int *num1,int *num2)
+{
+    int add=*num1+*num2;
+    printf("add=%d",add);
+    return 0;
+}
+int main()
+{
+    int a=4,b=5;
+    sum(&a,&b);
+    return 0;
+}
+
+
+#include<stdio.h>
+
+int main()
+{
+    int j,i,n,array[10],temp;
+    int *ptr;
+    printf("enter array size :\n");
+    scanf("%d",&n);
+    printf("enter array elements:");
+    for(i=0;i<n;i++)
+    {
+           // ptr=&array[i];
+        scanf("%d",&array[i]);
+    }
+    ptr=&array[i];
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            if(*ptr[i]>*ptr[j])
+            {
+                temp=*ptr[i];
+                *ptr[i]=*ptr[j];
+                *ptr[j]=temp;
+            }
+        }
+    }
+    printf("numbers in ascending are below \n");
+    for(i=0;i<n;i++)
+    {
+        printf("%d",*ptr[i]);
+    }
+    return 0;
+}
+
+
+#include<stdio.h>
+
+int main()
+{
+    int j,i,n,array[10];
+    int *ptr;
+    printf("enter array size :\n");
+    scanf("%d",&n);
+    printf("enter array elements:");
+    for(i=0;i<n;i++)
+    {
+           // ptr=&array[i];
+        scanf("%d",&array[i]);
+    }
+    ptr=&array[n-1];
+
+    //for(i=0;i<n/2;i++)
+        //{
+
+               // temp=*ptr[i];
+                //*ptr[i]=*ptr[n-i-1];
+                //*ptr[n-i-1]=temp;
+            //}
+
+
+    printf("reversed array elements are below \n");
+    for(i=0;i<n;i++)
+    {
+        printf("%d ",*ptr--);
+    }
+    return 0;
+}
+
+
+
+
+
+
+

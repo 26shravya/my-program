@@ -1,0 +1,893 @@
+\
+1)increment and decrement 
+int main()
+{
+
+    int num;
+    int inc1,dec1;
+    printf("enter a number:");
+    scanf("%d",&num);
+    inc1=num+1;
+    dec1=num-1;
+    printf("value of inc1 is=%d\n",inc1);
+    printf("value of dec1 is=%d\n",dec1);
+    return 0;
+}
+			
+
+2)swapping two numbers 
+#include<stdio.h>
+int main()
+{
+int num1=10;
+int num2=30;
+int temp=0;
+temp=num1;
+num1=num2;
+num2=temp;
+printf("after swapping num1=%d num2=%d\n",num1,num2);
+return 0;
+}
+
+3)without using 3rd variable
+
+#include<stdio.h>
+int main()
+{
+int num1=10;
+int num2=30;
+int temp=0;
+num1=num1+num2;
+num2=num1-num2;
+num1=num1-num2;
+printf("after swapping num1=%d num2=%d\n",num1,num2);
+return 0;
+}
+
+3)floating to int
+
+#include<stdio.h>
+int main()
+{
+float num1=6.456;
+int num2;
+num2=(int)(num1+0.5);
+printf("value of num2 is=%d\n",num2);
+return 0;
+}
+
+4)character program
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+char ch;
+printf("enter a character :");
+scanf("%c",&ch);
+if(ch>=65&&ch<90)
+{
+   printf("%c",ch+1);
+
+}
+else if(ch>=97&&ch<122)
+{
+    printf("%c",ch+1);
+}
+else if(ch==90)
+{
+    printf("%c",65);
+}
+else if(ch==122)
+{
+
+    printf("%c",97);
+}
+else
+{
+
+    printf("%c",ch);
+}
+getch();
+return 0;
+}
+
+5)c.s
+
+#include<stdio.h>
+int main()
+{
+int num1=21;
+    {
+if(num1%3==0&&num1%7==0)
+{
+    printf("number is multiple of 3 and 7\n ");
+}
+    else
+    {
+        printf("number is not a multiple of 3 and 7\n");
+}
+    }
+return 0;
+}
+
+6)arithematic 
+
+#include<stdio.h>
+int main()
+{
+int a=8,b=3;
+int c,d,e,f,g;
+c=a+b;
+d=a-b;
+e=a*b;
+f=a/b;
+g=a%b;
+printf("value of c=%d d=%d e=%d f=%d g=%d\n",c,d,e,f,g);
+return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+int a=5,b=5,c=10;
+if(a==b&&a<b&&a>b&&a<=b&&a>=b&&a!=b)
+{
+    printf("true");
+}
+    else{
+        printf("false ");
+}
+if(b==c&&b<c&&c>c&&b<=c&&b>=c&&b!=c)
+{
+    printf("true");
+}
+    else{
+        printf("false");
+}
+if(a==c&&a<c&&a>c&&a<=c&&a>=c&&a!=c)
+{
+    printf("true");
+}
+    else{
+        printf("false");
+}
+return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+int a=5,b=5,c=10;
+if(a==b)
+{
+    printf("true\n");
+}
+else{
+        printf("false\n");
+}
+
+    if (a<b)
+    {
+         printf("true\n");
+    }
+    else{
+        printf("false\n ");
+}
+if (a>b)
+    {
+    printf("true\n");
+}
+else{
+        printf("false\n");
+}
+if(a<=b)
+    {
+         printf("true\n");
+    }
+else{
+        printf("false\n ");
+}
+if (a>=b)
+{
+         printf("true\n");
+    }
+else{
+        printf("false\n ");
+}
+if(a!=b)
+    {
+         printf("true\n");
+    }
+else{
+        printf("false\n ");
+}
+
+return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+int a=20,b=10;
+int sum;
+sum=a+b;
+if(a==30||b==30||sum==30)
+{
+    printf("true");
+}
+else
+{
+    printf("not true");
+}
+return 0;
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+  int pri,t,si;
+  float rate;
+  printf("enter principle:\n");
+  scanf("%d",&pri);
+  printf("enter rate :\n");
+  scanf("%f",&rate);
+  printf("enter total time interval \n:");
+  scanf("%d",&t);
+  si=(pri*rate*t)/100;
+  printf("simple interest is=%d",si);
+  return 0;
+}
+
+
+
+
+#include<stdio.h>
+int main()
+{
+  int pri,t,ci;
+  int amount;
+  float rate;
+  printf("enter principal:\n");
+  scanf("%d",&pri);
+  printf("enter rate :\n");
+  scanf("%f",&rate);
+  printf("enter total time interval: \n");
+  scanf("%d",&t);
+  amount=pri*((pow((1+rate/100),t)));
+  ci=amount-pri;
+  printf("simple interest is=%d",ci);
+  return 0;
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a=5,b=5,c=10;
+    if(a>c&&b>c)
+    {
+        printf("condition is true\n");
+    }
+    else{
+        printf("condition is false\n");
+    }
+    if(a<c&&b<c)
+    {
+        printf("condition is true\n");
+    }
+    else{
+        printf("condition is false\n");
+    }
+    if(a>c||b>c)
+    {
+        printf("condition is true\n");
+    }
+    else{
+        printf("condition is false\n");
+    }
+    if(a==c||b==c)
+    {
+        printf("condition is true\n");
+    }
+    else{
+        printf("condition is false\n");
+    }
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    int num1,num2,num3,num4,num5,num6;
+    printf("enter values for a=%d b=%d\n",a,b);
+    num1=a&b;
+    printf("value of num1 is=%d\n",num1);
+    num2=a|b;
+    printf("value of num2 is=%d\n",num2);
+    num3=a^b;
+    printf("value of num3 is=%d\n",num3);
+    num4=a~b;
+    printf("value of num4 is=%d\n",num4);
+    num5=a<<b;
+    printf("value of num5 is=%d\n",num5);
+    num6=a>>b;
+    printf("value of num6 is=%d\n",num6);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int l,b,area,perimeter;
+    printf("Enter the length\n");
+    scanf("%d",&l);
+    printf("Enter the breadth\n");
+    scanf("%d",&b);
+    area=l*b;
+    perimeter=2*(l+b);
+    printf("Area of rectangle:%d\n",area);
+    printf("Perimeter of rectangle: %d\n",perimeter);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    int volume,area;
+    printf("Enter the value of a\n");
+    scanf("%d",&a);
+    area=6*a*a;
+    volume=a*a*a;
+    printf("Area of cube :%d\n",area);
+    printf("Volume of cube :%d\n",volume);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int a=2;
+    float b=3.45;
+    printf("%d",sizeof (a+b));
+    return 0;
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d;
+    printf("enter the value for a:\t");
+    scanf("%d",&a);
+    printf("enter the value for b:\t");
+    scanf("%d",&b);
+     printf("enter the value for c:\t");
+    scanf("%d",&c);
+     printf("enter the value for d:\t");
+    scanf("%d",&d);
+    return 0;
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d;
+    printf("enter the value for a:\n");
+    scanf("%d",&a);
+    printf("enter the value for b:\n");
+    scanf("%d",&b);
+     printf("enter the value for c:\n");
+    scanf("%d",&c);
+     printf("enter the value for d:\n");
+    scanf("%d",&d);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+int a=5,b=7,c=9;
+int big;
+big=a > b ? ( a > c ? a : c) : (b > c ? b : c) ;
+printf("the biggest number is=%d\n",big);
+return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+printf("\t\ts");
+printf("\n\ts");
+printf("\t\ts");
+printf("\n\t\ts");
+return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+int a=-5;
+if(a>0)
+{
+    printf("number is positive\n");
+}
+else if(a<0)
+{
+    printf("number is negative\n");
+}
+else if(a==0)
+{
+    printf("number is zero");
+}
+return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+char ch='s';
+if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+{
+    printf("character is a vowel\n");
+}
+else{
+    printf("not a vowel");
+}
+return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int a=45,b=78,c=8;
+    if(a>b&&a>c)
+{
+    printf("a is biggest\n");
+}
+else if(a<b&&b>c)
+{
+    printf("b is biggest\n");
+}
+else{
+    printf("c is biggest");
+}
+return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int temp;
+    printf("enter temperature\n");
+    scanf("%d",&temp);
+    if(temp<0)
+    {
+        printf("Freezing weather\n");
+    }
+    else if(temp==0||temp==1||temp==2||temp==3||temp==4||temp==5||temp==6||temp==7||temp==8||temp==9||temp==10)
+    {
+        printf("Very cold weather\n");
+    }
+    else if(temp==10||temp==11||temp==12||temp==13||temp==14||temp==15||temp==16||temp==17||temp==18||temp==19||temp==20)
+    {
+        printf("Cold weather\n");
+    }
+    else if(temp==20||temp==21||temp==22||temp==23||temp==24||temp==25||temp==26||temp==27||temp==28||temp==29||temp==30)
+    {
+        printf("Normal in temperature\n");
+    }
+    else if(temp==30||temp==31||temp==32||temp==33||temp==34||temp==35||temp==36||temp==37||temp==38||temp==39||temp==40)
+    {
+        printf("Its hot\n");
+    }
+    else{
+        printf("its very hot");
+    }
+return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int day=4;
+    switch(4)
+    {
+        case 1:printf("Monday");
+              break;
+        case 2:printf("Tuesday");
+              break;
+        case 3:printf("wednesday");
+              break;
+        case 4:printf("Thuesday");
+              break;
+        case 5:printf("Friday");
+               break;
+        case 6:printf("saturday");
+               break;
+        case 7:printf("sunday");
+               break;
+               default:printf("invalid");
+    }
+
+return 0;
+}
+
+
+int main()
+{
+    int maths,science,english,kannada,history;
+    int avg,total;
+    printf("enter marks for maths\n");
+    scanf("%d",&maths);
+    printf("enter marks for science\n");
+    scanf("%d",&science);
+    printf("enter marks for english\n");
+    scanf("%d",&english);
+    printf("enter marks for kannada\n");
+    scanf("%d",&kannada);
+    printf("enter marks for history\n");
+    scanf("%d",&history);
+    total=maths+science+english+kannada+history;
+    avg=total/5;
+    printf("total marks=%d and average marks =%d\n",total,avg);
+    if(avg>90)
+    {
+        printf("distinction\n");
+    }
+    else if(avg>60)
+    {
+        printf("first class\n");
+    }
+    else if(avg>=35)
+    {
+        printf("second class");
+    }
+    else if(avg<35)
+    {
+        printf("Fail");
+    }
+
+return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+   char ch='$';
+   if(ch=='a'||ch=='b'||ch=='c'||ch=='d'||ch=='e'||ch=='f'||ch=='g'||ch=='h'||ch=='i'||ch=='j'||ch=='k'||ch=='l'||ch=='m'||ch=='n'||ch=='o'||ch=='p'||ch=='q'||ch=='r'||ch=='s'||ch=='t'||ch=='u'||ch=='v'||ch=='w'||ch=='x'||ch=='y'||ch=='z')
+    {
+        printf("character is an alphabet\n");
+    }
+    else if(ch==1||ch==2||ch==3||ch==4||ch==5||ch==6||ch==7||ch==8||ch==9||ch==10)
+    {
+        printf("character is an digit\n");
+    }
+    if(ch=='_'||ch=='$'||ch=='@'||ch==' ')
+    {
+        printf("character is an special character\n");
+    }
+   return 0;
+
+}
+
+
+#include<stdio.h>
+int main()
+{
+char ch='A';
+if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+{
+    printf("character is a vowel\n");
+}
+else if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'){
+    printf("character is a vowel");
+}
+else{
+    printf("not a vowel");
+}
+return 0;
+}
+
+
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int year;
+printf("enter a year\n");
+scanf("%d",&year);
+if(((year%4==0)&&(year%100!=0))||(year%400==0))
+{
+printf("leap year\n");
+}
+else{
+    printf(" not an leap year\n");
+}
+return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+int days,year,weeks;
+printf("enter a days\n");
+scanf("%d",&days);
+year=days/365;
+weeks=(days%365)/7;
+days=(days%365)%7;
+printf("year=%d\n",year);
+printf("weeks=%d\n",weeks);
+printf("days=%d\n",days);
+return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+
+    double  a,b,c,dis,r1,r2,realp,imagp;
+    printf("enter values for a,b and c\n");
+    scanf("%lf%lf%lf",&a,&b,&c);
+    dis=b*b-4*a*c;
+    if(dis>0){
+        r1=(-b+sqrt(dis))/(2*a);
+        r2=(-b-sqrt(dis))/(2*a);
+            printf("r1=%.2lf r2=%.2lf\n",r1,r2);
+        }
+        else if(dis==0)
+        {
+            r1=r2=-b/(2*a);
+                printf("r1=r2=%.2lf:",r1);
+            }
+            else{
+                realp=-b/(2*a);
+                imagp=sqrt(-dis)/(2*a);
+                printf("r1=%.21f+%.21fi and r2=%.21f-%f.2lfi",realp,imagp,realp,imagp);
+            }
+
+        return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int side1,side2,side3;
+    printf("enter values for side1,side2 and side3\n");
+    scanf("%d%d%d",&side1,&side2,&side3);
+    if(side1==side2&&side2==side3){
+        printf("given triangle is equilateral:");
+    }
+    else if(side1==side2||side2==side3||side3==side1){
+        printf("given triangle is isosceles:");
+    }
+    else{
+        printf("given triangle is scalene:");
+    }
+return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int side1,side2,side3;
+    printf("enter values for side1,side2 and side3\n");
+    scanf("%d%d%d",&side1,&side2,&side3);
+    if(side1==side2&&side2==side3){
+        printf("given triangle is equilateral:");
+    }
+    else if(side1==side2||side2==side3||side3==side1){
+        printf("given triangle is isosceles:");
+    }
+    else{
+        printf("given triangle is scalene:");
+    }
+return 0;
+}
+
+
+int main()
+{
+    int x,y;
+    printf("enter values for x and y\n");
+    scanf("%d%d",&x,&y);
+    if(x>0&&y>0){
+        printf("given point lies at first quadrant :");
+    }
+    else if(x<0&&y>0){
+        printf("given point lies at second quadrant :");
+    }
+    else if(x<0&&y<0){
+        printf("given point lies at third quadrant:");
+    }
+    else if(x>0&&y<0)
+    {
+        printf("given point lies at fourth quadrant:");
+    }
+    else if(x==0&&y==0)
+    {
+        printf("given point lies at origin:");
+    }
+return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+
+    int ang1,ang2,ang3,sum;
+    printf("enter values for angles:");
+    scanf("%d%d%d",&ang1,&ang2,&ang3);
+    sum=ang1+ang2+ang3;
+    if(sum==180){
+        printf("the triangle is valid:\n");
+    }
+    else{
+        printf("the triangle is not valid:");
+    }
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+
+    int num=16;
+    int num2;
+    num2=num>>2;
+    printf("num2 is=%d",num2);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+
+    char key;
+    printf("enter a character\n");
+    scanf("%c",&key);
+    if((key>='a'||key<='z')&&(key>='A'||key<='Z')&&(key=='$'||key=='@')&&(key>=0||key<=9))
+    {
+        printf("%d",key);
+    }
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+
+    int side;
+    int sum;
+    printf("enter a side\n");
+    scanf("%d",&side);
+    sum=(side-2)*180;
+    if(side<3)
+    {
+        printf("0");
+    }
+    else
+    {
+        printf("sum of angle is=%d\n",sum);
+    }
+    return 0;
+}
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char name[25];
+    int ci,unit;
+    float charge,grtamt,netamt,surcharge=0;
+    printf("enter a name:");
+    scanf("%c",name);
+    printf("enter customer id:");
+    scanf("%d",&ci);
+    printf("enter unit:");
+    scanf("%d",&unit);
+    if(unit<200)
+        charge=1.20;
+    else if(unit>=200&&unit<400)
+        charge=1.50;
+    else if(unit>=400&&unit<600)
+        charge=1.80;
+    else
+        charge=2.00;
+    grtamt=unit*charge;
+    if(grtamt>400)
+        surcharge=grtamt*15/100.00;
+    netamt=grtamt+surcharge;
+    if(netamt<100)
+        netamt=100;
+        printf("Electricity Bill\n");
+        printf("Customer IDNO :%d\n",ci);
+        printf("Customer Name :%s\n",name);
+        printf("unit Consumed:%d\n",unit);
+        printf("Amount Charges @Rs. %4.2f  per unit :%8.2f\n",charge,grtamt);
+        printf("Surcharge Amount:%8.2f\n",surcharge);
+        printf("Net Amount Paid By the Customer :%8.2f\n",netamt);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int oppo=12000;
+    int mi=20000;
+    int redmi=40000;
+    int vivo=60000;
+    int moto=80000;
+    if(oppo==12000)
+    {
+        printf("oppo");
+    }
+    else if(mi==12000)
+    {
+        printf("Mi");
+    }
+    else if(redmi==12000)
+    {
+        printf("Redmi");
+    }
+    else if(vivo==12000)
+    {
+        printf("vivo");
+    }
+    else if(moto==12000)
+    {
+        printf("Moto");
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
