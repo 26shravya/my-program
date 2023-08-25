@@ -1,3 +1,4 @@
+1)write c code to count the duplicates in the array
 #include<stdio.h>
 int main()
 {
@@ -26,6 +27,7 @@ int main()
     return 0;
 }
 
+2)write c code to find the sum and average of the number using array
 #include<stdio.h>
 int main()
 {
@@ -49,6 +51,7 @@ int main()
     return 0;
 }
 
+3)write c code to generate array of number using function
 #include<stdio.h>
 int arrayNumber(int a[100])
          {
@@ -88,6 +91,7 @@ int arrayNumber(int a[100])
          }
 
 
+4)write c code to find the frequency of the number using array
 #include<stdio.h>
 int main()
 {
@@ -124,7 +128,7 @@ for(i=0;i<n;i++){
 return 0;
 }
 
-
+5)write c code to find the smallest and largest number in the array
 #include<stdio.h>
 int main()
 {
@@ -153,7 +157,7 @@ printf("\n the largest element in the matrix is=%d\n",big);
 return 0;
 }
 
-
+6)write c code to print the even and odd numbers in the array
 #include<stdio.h>
 int main()
 {
@@ -191,6 +195,7 @@ for(i=0;i<k;i++)
 return 0;
 }
 
+7)write c code to delete a number from the array
 include<stdio.h>
 int main()
 {
@@ -219,7 +224,7 @@ int main()
 
 }
 
-
+8)write c code to generate 2D array using function
 # include<stdio.h>
 void myfun(int array[20][20],int r,int c);
 int main()
@@ -241,7 +246,7 @@ void myfun(int array[20][20],int r,int c)
     }
 }
 
-
+9)write c code to print first maximum and second maximum element in the array
 #include<stdio.h>
 int main()
 {
