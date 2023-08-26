@@ -1,3 +1,4 @@
+1)write c code to print one string
 #include<stdio.h>
 int main()
 {
@@ -6,7 +7,7 @@ int main()
 }
 
 
-
+2)write c code to print multiple string 
 #include<stdio.h>
 int main()
 {
@@ -16,7 +17,7 @@ int main()
     return 0;
 }
 
-
+3)write c code to print address of two number
 #include<stdio.h>
 int main()
 {
@@ -26,7 +27,7 @@ int main()
     return 0;
 }
 
-
+5)write c code to print multiple character 
 #include<stdio.h>
 #include<string.h>
 int main()
@@ -56,7 +57,7 @@ int main()
 }
 
 
-
+6)write c code to swap two numbers using third variable 
 #include<stdio.h>
 int main()
 {
@@ -71,7 +72,7 @@ int main()
     return 0;
 }
 
-
+7)write c code to add,subtract,multiply and divide two numbers.
 #include<stdio.h>
 int main()
 {
@@ -114,7 +115,7 @@ int main()
     return 0;
 }
 
-
+8)write c code to print even number or not.
 #include<stdio.h>
 int main()
 
@@ -129,7 +130,7 @@ int main()
     return 0;
 }
 
-
+10)write c code to add two numbers
 #include<stdio.h>
 int main()
 
